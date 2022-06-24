@@ -1,4 +1,4 @@
-![speen}(https://github.com/ignasbbbb/stuff/speeen.gif)
+![speen](https://github.com/ignasbbbb/stuff/blob/main/speeen.gif?raw=true)
 
 
 
