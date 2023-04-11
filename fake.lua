@@ -1,4 +1,3 @@
-wait(4)
 local realchar = owner.Character
 local oldpos = realchar.HumanoidRootPart.CFrame
 local props = PhysicalProperties.new(5,1,0)
