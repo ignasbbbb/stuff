@@ -1,5 +1,5 @@
 wait(4)
-local realchar = workspace:FindFirstChildOfClass("Model")
+local realchar = owner.Character
 local oldpos = realchar.HumanoidRootPart.CFrame
 local props = PhysicalProperties.new(5,1,0)
 local props2 = PhysicalProperties.new(0,1,0)
