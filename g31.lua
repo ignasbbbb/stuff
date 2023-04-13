@@ -1,7 +1,6 @@
 --[[
 		Thanks for using Build-To-Lua by jarredbcv.
 ]]--
-local owner = game.Players["MFW_VXPE"]
 
 New = function(Object, Parent, Name, Data)
 	local Object = Instance.new(Object)
