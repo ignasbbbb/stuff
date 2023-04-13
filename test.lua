@@ -9,8 +9,9 @@ HMesh.MeshType = Enum.MeshType.Head
 HMesh.Scale = Vector3.new(1.25,1.25,1.25)
 H.CustomPhysicalProperties = props2
 H.CanCollide = false
-H.Anchored = true
+H.Anchored = false
 H.Position = realchar.Head.Position
+H.Name = "Totally not wall's thing"
 
 local rs = game:GetService("RunService")
 rs.Heartbeat:Connect(function()
@@ -18,3 +19,13 @@ rs.Heartbeat:Connect(function()
 end)
 
 owner.Character = nil
+
+NLS([[
+  local H = workspace["Totally not wall's thing"]
+  local oldpos = H.CFrame
+  local rs = game:GetService("RunService")
+  rs.Heartbeat:Connect(function()
+    H.CFrame = oldpos
+    H.AssemblyLinearVelocity = Vector3.zero
+  end)
+]])
