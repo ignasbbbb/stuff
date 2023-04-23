@@ -5,6 +5,7 @@ Main.Anchored = false
 Main.Enabled = false
 Main:SetNetworkOwner(owner)
 Main.Locked = true
+Main.FrontSurface = Enum.SurfaceType.Hinge
 
 local chatservice = game:GetService("Chat")
 
