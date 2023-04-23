@@ -6,6 +6,12 @@ Main.Enabled = false
 Main:SetNetworkOwner(owner)
 Main.Locked = true
 
+local chatservice = game:GetService("Chat")
+
+owner.Chatted:Connect(function(text)
+	chatservice:Chat(Main,text)
+end)
+
 NLS([[
 wait(2)
 local a = workspace.dsa
