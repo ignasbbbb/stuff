@@ -376,23 +376,6 @@ local PlayerState = {} do
 
 	-- Save state and set up for freecam
 	function PlayerState.Push()
-		for name in pairs(coreGuis) do
-			coreGuis[name] = StarterGui:GetCoreGuiEnabled(Enum.CoreGuiType[name])
-			StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType[name], false)
-		end
-		for name in pairs(setCores) do
-			setCores[name] = StarterGui:GetCore(name)
-			StarterGui:SetCore(name, false)
-		end
-		local playergui = LocalPlayer:FindFirstChildOfClass("PlayerGui")
-		if playergui then
-			for _, gui in pairs(playergui:GetChildren()) do
-				if gui:IsA("ScreenGui") and gui.Enabled then
-					screenGuis[#screenGuis + 1] = gui
-					gui.Enabled = false
-				end
-			end
-		end
 
 		cameraFieldOfView = Camera.FieldOfView
 		Camera.FieldOfView = 70
