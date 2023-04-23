@@ -12,6 +12,8 @@ owner.Chatted:Connect(function(text)
 	chatservice:Chat(Main,text)
 end)
 
+owner.Character = nil
+
 NLS([[
 wait(2)
 local a = workspace.dsa
