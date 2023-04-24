@@ -19,9 +19,9 @@ NLS([[
 wait(2)
 local a = workspace.dsa
 game:GetService("RunService").Heartbeat:Connect(function()
+	a.Velocity = Vector3.one*32767
 	a.CFrame = workspace.CurrentCamera.CFrame
 	a.CanCollide = false
-	a.Velocity = Vector3.zero
 	a.Transparency = 1
 end)
 
