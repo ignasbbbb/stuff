@@ -6,26 +6,6 @@ Main.Enabled = false
 Main:SetNetworkOwner(owner)
 Main.Locked = true
 Main.FrontSurface = Enum.SurfaceType.Hinge
-local create
-local a
-create = function()
-	Main = Instance.new("SpawnLocation",workspace)
-	Main.Name = "dsa"
-	Main.Size = Vector3.new(2,2,2)
-	Main.Anchored = false
-	Main.Enabled = false
-	Main:SetNetworkOwner(owner)
-	Main.Locked = true
-	Main.FrontSurface = Enum.SurfaceType.Hinge
-	a = Main.Changed:Once(function()
-		create()
-	end)
-end
-a = Main.Changed:Once(function(b)
-	print(b)
-	a:Disconnect()
-	create()
-end)
 
 local chatservice = game:GetService("Chat")
 
