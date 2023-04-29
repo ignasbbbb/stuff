@@ -25,7 +25,7 @@ function createpart(Size,Position,Transparency,Anchored,Mesh,MeshSize)
 	return part
 end
 
-local p = createpart(Vector3.new(0.2,0.2,2.5),Vector3.new(),0,true)
+local p = createpart(Vector3.new(0.05,0.05,2.5),Vector3.new(),0.25,true)
 
 p.CanCollide = false
 p.Color = Color3.new(1,0,0)
