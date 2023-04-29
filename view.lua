@@ -1,5 +1,3 @@
-local owner = game:GetService("Players"):WaitForChild("MFW_VXPE")
-
 local remote = Instance.new("RemoteEvent",script)
 local viewangle = Instance.new("ObjectValue",owner)
 viewangle.Name = "ViewAngle"
