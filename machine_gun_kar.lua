@@ -2288,22 +2288,12 @@ RemoteEvent.OnServerEvent:Connect(function(Player,Received,MTarget) -- Main fire
 				if Humanoid and Humanoid.Parent ~= Player.Character then
 					if Hit.Name == "Head" or Hit.Parent:IsA("Accessory") then
 						Humanoid:TakeDamage(Do.HeadDamage)
-						Hit.Transparency = 1
 						Tool.Handle.Headshot:Play()
 						--local e = Tool.Taunts:GetChildren()
 						--local ran:Sound= e[math.random(1,#e)]:Clone()
 						--ran.Parent = Handle
 						--ran:Play()
 						
-						for i = 1,50 do
-							local part = Instance.new("Part",workspace)
-							part.Size = Vector3.new(.3,.3,.3)
-							part.Material = Enum.Material.Pebble
-							part.Color = Color3.fromRGB(109, 0, 0)
-							part.Position = Hit.Position
-							part.Transparency = 0
-							Debris:AddItem(part,5.5)
-						end
 					else
 						Humanoid:TakeDamage(Do.Damage)
 					end
