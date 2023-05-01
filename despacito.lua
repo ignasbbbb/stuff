@@ -31,8 +31,7 @@ local RightHip = getJoint("Right Hip")
 local LeftHip = getJoint("Left Hip")
 local Neck = getJoint("Neck")
 
-
-rs.Heartbeat:Connect(function(deltaTime)
+while wait() do
 	sine = os.clock()
 	local hum = owner.Character.Humanoid
 	if hum.MoveDirection.Magnitude == 0 then
@@ -52,7 +51,7 @@ rs.Heartbeat:Connect(function(deltaTime)
 		RightHip.C0 = RightHip.C0:Lerp(cf(1, -1 + 0.2 * sin((sine + 1.5) * 6)*3, -0.25 + 0.25 * sin((sine + 1.5) * 6)*3) * angles(-0.7853981633974483 * sin((sine + 1.65) * 6)*3, 1.5707963267948966, 0), deltaTime) 
 		--LeftArm,-1,0,0,1,165,4,0,1.5,0.5,0.15,0,1.5,-90,0,0,1,-.35,0,0,1,0,0,0,1,Torso,0,0,0,1,-100,0,0,1,0,0.1,1.5,12,-0,0,0,1,0,0,0,1,180,0,0,1,Head,0,0,0,1,-90,0,0,1,1,0,0,1,-0,0,0,1,0,0,0,1,180,0,0,1,RightArm,1,0,0,1,0,-4,0,1.5,0.5,0.15,0.7,1.5,90,0,0,1,0,0,0,1,0,0,0,1,LeftLeg,-1,0,0,4,-0,-45,0.15,6,-1,0.2,0,6,-90,0,0,4,-0.25,0.25,0,6,0,0,0,4,RightLeg,1,0,0,1,0,-45,1.65,6,-1,0.2,1.5,6,90,0,0,1,-.25,0.25,1.5,6,0,0,0,1
 	end	
-end)
+end
 
 
 
