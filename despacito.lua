@@ -33,7 +33,7 @@ local Neck = getJoint("Neck")
 
 
 rs.Heartbeat:Connect(function(deltaTime)
-	sine = tick()
+	sine = os.clock()
 	local hum = owner.Character.Humanoid
 	if hum.MoveDirection.Magnitude == 0 then
 		LeftHip.C0 = LeftHip.C0:Lerp(cf(-1, -1 + 0.1 * sin((sine + 1) * 1.5), 0) * angles(-0.08726646259971647 * sin((sine + 3.2) * 1.5), -1.5707963267948966, 0), deltaTime) 
