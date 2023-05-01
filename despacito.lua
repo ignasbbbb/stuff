@@ -48,8 +48,8 @@ rs.Heartbeat:Connect(function()
 		RootJoint.C0 = RootJoint.C0:Lerp(cf(0, 0.1 * sin((sine + 1.5) * 12)*3, 0) * angles(-1.7453292519943295, 0, 3.141592653589793), deltaTime) 
 		Neck.C0 = Neck.C0:Lerp(cf(0, 1, 0) * angles(-1.5707963267948966, 0, 3.141592653589793), deltaTime) 
 		RightShoulder.C0 = RightShoulder.C0:Lerp(cf(1, 0.5 + 0.15 * sin((sine + 0.7) * 1.5), 0) * angles(-0.06981317007977318 * sin(sine * 1.5), 1.5707963267948966, 0), deltaTime) 
-		LeftHip.C0 = LeftHip.C0:Lerp(cf(-1, -1 + 0.2 * sin(sine * 6)*3, -0.25 + 0.25 * sin(sine * 6)) * angles(-0.7853981633974483 * sin((sine + 0.15) * 6)*3, -1.5707963267948966, 0), deltaTime) 
-		RightHip.C0 = RightHip.C0:Lerp(cf(1, -1 + 0.2 * sin((sine + 1.5) * 6)*3, -0.25 + 0.25 * sin((sine + 1.5) * 6)*3) * angles(-0.7853981633974483 * sin((sine + 1.65) * 6)*3, 1.5707963267948966, 0), deltaTime) 
+		LeftHip.C0 = LeftHip.C0:Lerp(cf(-1, -1 + 0.2 * sin(sine * 6)*5, -0.25 + 0.25 * sin(sine * 6)) * angles(-0.7853981633974483 * sin((sine + 0.15) * 6)*5, -1.5707963267948966, 0), deltaTime) 
+		RightHip.C0 = RightHip.C0:Lerp(cf(1, -1 + 0.2 * sin((sine + 1.5) * 6)*3, -0.25 + 0.25 * sin((sine + 1.5) * 6)*5) * angles(-0.7853981633974483 * sin((sine + 1.65) * 6)*5, 1.5707963267948966, 0), deltaTime) 
 		--LeftArm,-1,0,0,1,165,4,0,1.5,0.5,0.15,0,1.5,-90,0,0,1,-.35,0,0,1,0,0,0,1,Torso,0,0,0,1,-100,0,0,1,0,0.1,1.5,12,-0,0,0,1,0,0,0,1,180,0,0,1,Head,0,0,0,1,-90,0,0,1,1,0,0,1,-0,0,0,1,0,0,0,1,180,0,0,1,RightArm,1,0,0,1,0,-4,0,1.5,0.5,0.15,0.7,1.5,90,0,0,1,0,0,0,1,0,0,0,1,LeftLeg,-1,0,0,4,-0,-45,0.15,6,-1,0.2,0,6,-90,0,0,4,-0.25,0.25,0,6,0,0,0,4,RightLeg,1,0,0,1,0,-45,1.65,6,-1,0.2,1.5,6,90,0,0,1,-.25,0.25,1.5,6,0,0,0,1
 	end
 	lastsin = os.clock()
