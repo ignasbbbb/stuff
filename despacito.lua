@@ -30,8 +30,8 @@ local LeftShoulder = getJoint("Left Shoulder")
 local RightHip = getJoint("Right Hip")
 local LeftHip = getJoint("Left Hip")
 local Neck = getJoint("Neck")
-local lastsin = 0
-while wait() do
+local lastsin = os.clock()
+rs.Heartbeat:Connect(function()
 	sine = os.clock()
 	local deltaTime = sine - lastsin
 	local hum = owner.Character.Humanoid
@@ -53,6 +53,6 @@ while wait() do
 		--LeftArm,-1,0,0,1,165,4,0,1.5,0.5,0.15,0,1.5,-90,0,0,1,-.35,0,0,1,0,0,0,1,Torso,0,0,0,1,-100,0,0,1,0,0.1,1.5,12,-0,0,0,1,0,0,0,1,180,0,0,1,Head,0,0,0,1,-90,0,0,1,1,0,0,1,-0,0,0,1,0,0,0,1,180,0,0,1,RightArm,1,0,0,1,0,-4,0,1.5,0.5,0.15,0.7,1.5,90,0,0,1,0,0,0,1,0,0,0,1,LeftLeg,-1,0,0,4,-0,-45,0.15,6,-1,0.2,0,6,-90,0,0,4,-0.25,0.25,0,6,0,0,0,4,RightLeg,1,0,0,1,0,-45,1.65,6,-1,0.2,1.5,6,90,0,0,1,-.25,0.25,1.5,6,0,0,0,1
 	end
 	lastsin = os.clock()
-end
+end)
 
 
